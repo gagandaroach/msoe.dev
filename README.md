@@ -13,14 +13,19 @@ feel free to contribute in any way
 
 ## How to run this environment
 
-### Docker (recommended)
-
-* todo
-
 ### NPM CLI
+
+>**recommended for development**
 
 1. `cd msoe_dev_app`
 2. `npm run serve`
+
+### Docker
+
+>**recommended for deployment**
+
+1. `docker-compose up`
+2. http://localhost:8080/
 
 ## How I set up Vue and Element for this Project
 
@@ -28,19 +33,20 @@ feel free to contribute in any way
 
 ### 1. install vue
 
-   `npm install -g @vue/cli`
+`npm install -g @vue/cli`
 
-   `npm install -g @vue/cli-service-global`
+`npm install -g @vue/cli-service-global`
 
 ### 2. create vue project
 
-   `vue create msoe_dev_app`
+`vue create msoe_dev_app`
 
-   When prompted: 
+When prompted: 
 
-  `? Please pick a preset: default (babel, eslint)`
+`? Please pick a preset: default (babel, eslint)`
 
 ### 3. add element to project
+
 `cd msoe_dev_app`
 
 `vue add element`

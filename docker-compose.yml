@@ -1,0 +1,14 @@
+# Docker Compose File
+# msoe.dev environment
+# Author: Gagan Daroach gagandaroach@gmail.com
+# Date: March 16 2019
+
+version: "3"
+
+services:
+  #dynamic dns with google domains for daroach.net
+  msoe_dev:
+    build: ./msoe_dev_app
+    restart: always
+    ports: 
+      - 8080:8080
