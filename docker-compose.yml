@@ -5,6 +5,11 @@
 
 version: "3"
 
+# needed to attach to my servers network
+# networks:
+#   daroachnetwork:
+#     external: true
+
 services:
   #dynamic dns with google domains for daroach.net
   msoe_dev:
@@ -12,5 +17,6 @@ services:
     restart: always
     ports: 
       - 8080:8080
-    env_file: 
-      - jwilder_nginx_proxy.env
+    # if you want to use jwilder's nginx proxy container
+    # env_file: 
+    #   - jwilder_nginx_proxy.env
