@@ -15,6 +15,7 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+console.log("Starting instance @ " + Date(Date.now()));
 
 export default {
   name: 'app',
