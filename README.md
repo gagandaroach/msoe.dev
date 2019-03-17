@@ -18,6 +18,7 @@ feel free to contribute in any way
 >**recommended for development**
 
 1. `cd msoe_dev_app`
+2. if it is your first time, you may have to run `sudo npm install` here to install the node_modules.
 2. `npm run serve`
 
 ### Docker
@@ -33,9 +34,9 @@ feel free to contribute in any way
 
 ### 1. install vue
 
-`npm install -g @vue/cli`
+`sudo npm install -g @vue/cli`
 
-`npm install -g @vue/cli-service-global`
+`sudo npm install -g @vue/cli-service-global`
 
 ### 2. create vue project
 
@@ -54,6 +55,8 @@ When prompted:
 **note** i chose to fully import element and overwrite Element's SCSS variables.
 
 ### 4. run it
+
+`sudo npm install`
 
 `npm run serve`
 * http://localhost:8080/ 
