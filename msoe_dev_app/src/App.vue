@@ -1,34 +1,45 @@
 <template>
-  <div id="app">
-    <MsoeHeader />
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<div>
+    <DevHeader/>
+  <el-container>
+      <DevNavbar/>
+      <el-main>
+        <el-row>
+          <el-alert
+            :span="24"
+            title="Site is a Work in Progress. Contact gagandaroach@gmail.com with any questions or suggestions."
+            type="warning"
+          ></el-alert>
+        </el-row>
+        <About />
+      </el-main>
+  </el-container>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import MsoeHeader from './components/MsoeHeader.vue'
+import About from "./components/About.vue";
+import DevHeader from "./components/DevHeader.vue";
+import DevNavbar from "./components/DevNavbar.vue";
 
 console.log("Starting instance @ " + Date(Date.now()));
 
-
-
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld,
-    MsoeHeader
+    About,
+    DevHeader,
+    DevNavbar
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
