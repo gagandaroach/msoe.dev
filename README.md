@@ -1,5 +1,5 @@
 # [msoe.dev](https://msoe.dev/) live HTML
-> My First Ever Vue Js Website
+> A Vue Js Website
 
 come take a look at the code for msoe.dev
 
@@ -15,7 +15,7 @@ feel free to contribute in any way
 
 ### NPM CLI
 
->**recommended for development**
+>**recommended for development**. a good place to explore the code and test out your own modifications
 
 1. `cd msoe_dev_app`
 2. if it is your first time, you may have to run `sudo npm install` here to install the node_modules.
@@ -23,7 +23,7 @@ feel free to contribute in any way
 
 ### Docker
 
->**recommended for deployment**
+>**recommended for deployment** use with jwilder's nginx-proxy contain'er to easily serve https content
 
 1. `docker-compose up`
 2. http://localhost:8080/
@@ -32,13 +32,13 @@ feel free to contribute in any way
 
 *[tutorial i followed](https://github.com/ElementUI/vue-cli-plugin-element)*
 
-### 1. install vue
+#### 1. install vue
 
 `sudo npm install -g @vue/cli`
 
 `sudo npm install -g @vue/cli-service-global`
 
-### 2. create vue project
+#### 2. create vue project
 
 `vue create msoe_dev_app`
 
@@ -46,7 +46,7 @@ When prompted:
 
 `? Please pick a preset: default (babel, eslint)`
 
-### 3. add element to project
+#### 3. add element to project
 
 `cd msoe_dev_app`
 
@@ -54,7 +54,7 @@ When prompted:
 
 **note** i chose to fully import element and overwrite Element's SCSS variables.
 
-### 4. run it
+#### 4. run it
 
 `sudo npm install`
 
